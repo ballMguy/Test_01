@@ -3,13 +3,13 @@ import java.lang.Math;
 public class Question_1 {
 
     public static void main(String[] args) {
-        Scanner scanIn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter number x: ");
-        int x = scanIn.nextInt();
+        int x = sc.nextInt();
         System.out.print("Enter Operation (+ - * / % ^): ");
-        String operator = scanIn.next();
+        String operator = sc.next();
         System.out.print("Enter number y: ");
-        int y = scanIn.nextInt();
+        int y = sc.nextInt();
         double z = 0;
         switch (operator) {
             case "+":
@@ -41,6 +41,6 @@ public class Question_1 {
                 break;
         }
     System.out.println(z);
-    scanIn.close();
+    sc.close();
     }
 }
